@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section>
+        <p class="navitem2">Based in Nigeria <img src="" alt="" id="day-night-icon"> <p id="time"> </p></p>
+      
+      </section>
+        <header>
+          <h1>My Portfolio Website</h1>
+          <nav>
+            <a href="/index.html">Home</a>
+                <script src="./js/script.js"></script>
+            <a href="/aboutme.html">About Me</a>
+            <a href="/project.html">Projects</a>
+            <a href="#" id="selectedPage">Contact</a>
+          </nav>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </header>
+      
+        <div id="menu">
+          <a href="#">Home</a>
+          <a href="#">About Me</a>
+          <a href="#">Projects</a>
+          <a href="#">Register</a>
+        </div>
+      
+        <script>
+          function toggleMenu() {
+            const menu = document.getElementById("menu");
+            if (menu.style.display === "none") {
+              menu.style.display = "block";
+            } else {
+              menu.style.display = "none";
+            }
+          }
+        </script>
+        <div class="container">
+          <h1>Contact Me</h1>
+          <p>Please use the form below to contact me.</p>
+      
+          <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your name">
+      
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Your email">
+      
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Your message"></textarea>
+      
+            <button type="submit">Send</button>
+          </form>
+        </div>
+</body>
+</html>

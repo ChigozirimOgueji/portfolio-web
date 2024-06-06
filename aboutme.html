@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutme.css">
+</head>
+<body>
+
+    <section>
+        <p class="navitem2">Based in Nigeria <img src="" alt="" id="day-night-icon"> <p id="time"> </p></p>
+      
+      </section>
+        <header>
+          <h1>My Portfolio Website</h1>
+          <nav>
+            <a href="./index.html" ">Home</a>
+                <script src="./js/script.js"></script>
+            <a href="#" id="selectedPage">About Me</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Send a Message</a>
+          </nav>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </header>
+      
+        <div id="menu">
+
+          <a href="./aboutme.html">About Me</a>
+          <a href="./project.html">Projects</a>
+          <a href="./contact.html">Register</a>
+        </div>
+      
+        <script>
+          function toggleMenu() {
+            const menu = document.getElementById("menu");
+            if (menu.style.display === "none") {
+              menu.style.display = "block";
+            } else {
+              menu.style.display = "none";
+            }
+          }
+        </script>
+      
+    <div class="about-me-page">
+        <div class="image-container">
+            <img src="./images/my picture.jpg" alt="">
+        </div>
+        
+    
+        <div class="about-me-container">
+            <div class="circle-container">
+                <h1>So, who am I?</h1>
+            
+                <p>
+                 I'm a website developer currently doing my internship at Genesys.
+                 My current role is in back-end engineering.
+                I love coding because it's a way to express creativity. 
+                I'm very proficient in HTML/CSS, Javascript and now, node.js and mongoDB
+                which are the tools I use plus I have good eyes for design.
+                I am also an excellent communicator and team player, with a strong work ethic and a commitment to excellence.
+                 I am currently seeking a new challenge where I can use my skills 
+                and experience to make a significant contribution to an organization
+                When I'm not coding, you'll find me sleeping or in my head.
+                </p>
+            </div>
+            
+            
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>

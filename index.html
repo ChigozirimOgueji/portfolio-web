@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Header</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+
+<section>
+  <p class="navitem2">Based in Nigeria <img src="" alt="" id="day-night-icon"> <p id="time"> </p></p>
+
+</section>
+  <header>
+    <h1>My Portfolio Website</h1>
+    <nav>
+      <a href="#" id="selectedPage">Home</a>
+          <script src="./js/script.js"></script>
+      <a href="aboutme.html">About Me</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Send a Message</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  </header>
+
+  <div id="menu">
+    <a href="">About Me</a>
+    <a href="#">Projects</a>
+    <a href="#">Register</a>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      if (menu.style.display === "none") {
+        menu.style.display = "block";
+      } else {
+        menu.style.display = "none";
+      }
+    }
+  </script>
+
+
+<div class="images-container">
+    <marquee direction="left">
+      <img src="/images/atom.png" alt="Image 1">
+      <img src="/images/css-3.png" alt="Image 2">
+      <img src="/images/database-storage.png" alt="Image 3">
+      <img src="/images/html5.png" alt="Image 4">
+      <img src="/images/java-script.png" alt="Image 5">
+      <img src="/images/nodejs.png" alt="Image 6">
+    </marquee>
+  </div>
+
+<div class="about-me-container">
+    <div class="text">
+        <h1>I'm Joyce</h1>
+        <p>I'm a website developer currently doing my internship at Genesys.
+            My current role is back-end engineering.
+           <!-- I love coding because it's a way to express creativity.  -->
+           I'm very proficient in HTML/CSS, Javascript, node.js and mongoDB
+           which are the tools I use plus I have good eyes for design.
+           See some of my works<a href=""> HERE</a>
+           I am also an excellent communicator and team player, with a strong work ethic and a commitment to excellence.
+            I am currently seeking a new challenge where I can use my skills 
+           and experience to make a significant contribution to an organization
+           When I'm not coding, you'll find me sleeping.
+           Want to drop a message? <a href="">CONTACT ME</a>
+        </p>
+    </div>
+</div>
+<!--Top Content-->
+<section class="top">
+    <footer>
+        <div class="icon-container">
+            <a href="mailto: simplyJoyce@email.com"><img src="./images/gmail.png" alt=""></a>
+            <a href="https://t.me/lordeJoyce"><img src="./images/telegram.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/zirim-ogueji-171112296/"><img src="./images/linkedin.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=10008370911"><img src="./images/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/simplyjoyce/"><img src="./images/instagram.png" alt=""></a>
+            <a href=""><img src="./images/medium.png" alt=""></a>
+            <a href=""><img src="./images/whatsapp.png" alt=""></a>
+        </div>
+    </footer>
+</section>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <section>
+        <p class="navitem2">Based in Nigeria <img src="" alt="" id="day-night-icon"> <p id="time"> </p></p>
+      
+      </section>
+        <header>
+          <h1>My Portfolio Website</h1>
+          <nav>
+            <a href="./index.html">Home</a>
+                <script src="./js/script.js"></script>
+            <a href="./aboutme.html">About Me</a>
+            <a href="#" id="selectedPage">Projects</a>
+            <a href="./contact.html">Register</a>
+          </nav>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </header>
+      
+        <div id="menu">
+          <a href="./index.html">Home</a>
+          <a href="./aboutme.html">About Me</a>
+          <a href="#" id="selectedPage">Projects</a>
+          <a href="./contact.html">Register</a>
+        </div>
+      
+        <script>
+          function toggleMenu() {
+            const menu = document.getElementById("menu");
+            if (menu.style.display === "none") {
+              menu.style.display = "block";
+            } else {
+              menu.style.display = "none";
+            }
+          }
+        </script> 
+
+<h1 class="title">My Projects</h1>
+<h3>These are some of my works:</h3>
+<div class="wrapper">
+            <div class="box"><img src="images/bakery.png" alt=""></div>
+            <div class="box"><img src="images/assignment.png" alt=""></div>
+            <div class="box"><img src="images/movix.png" alt=""></div>
+            <div class="box"><img src="images/bakery2.png" alt=""></div>
+            <div class="box"><img src="images/sign-in form.png" alt=""></div>
+            <div class="box"><img src="images/movix2.png" alt=""></div>
+
+        </div>
+</body>
+</html>

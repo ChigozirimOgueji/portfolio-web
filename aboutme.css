@@ -1,0 +1,91 @@
+
+
+body{
+  background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        #D2B48C 10px,
+        #D2B48C 20px
+      ),
+      linear-gradient(
+        to bottom,
+        #B99976,
+        #B99976      )
+}
+
+.about-me-page{
+    display: flex;
+justify-content: center;
+gap: 70px;
+align-items: center;
+}
+
+.about-me-container{
+    display: flex;
+    justify-content: center;
+}
+
+.circle-container{
+  border: #A5D74D   10px solid;
+  align-items: center;
+  border-radius: 25%;
+  padding: 25px;
+  background-color:#81BE1C;
+}
+
+/* LEFT IMAGE */
+.image-container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container img{
+    height: 90vh;
+    border-radius: 30px;
+
+}
+
+/* END OF LEFT IMAGE */
+
+/* RIGHT MESSAGE */
+.about-me-container{
+  display: block;
+  justify-content: center;
+  line-height: 40px;
+  width: 700px;
+}
+
+.about-me-container h1{
+  color: #D2B48C;
+  font-size: 70px;
+  justify-content: center;
+  display: flex;
+}
+
+.about-me-container p{
+  color:#DFDFD4 ;
+  font-size: 25px;
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  
+}
+/* RIGHT MESSAGE */
+
+@media (max-width: 960px) {
+  .about-me-page{
+    display: block;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px){
+  .about-me-page{
+    display: block;
+    justify-content: center;
+  }
+}
+
