@@ -153,6 +153,10 @@ footer {
     width: 40PX;
     opacity: 0.5;
 }
+
+.icon-container img:hover{
+  opacity: 1;
+}
 /* END OF FOOTER */
 
 #selectedPage{
